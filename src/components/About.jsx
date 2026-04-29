@@ -31,7 +31,6 @@ export default function About() {
   return (
     <section id="about" className="py-20 bg-gray-50 section-animate">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
-        {/* Header */}
         <div className="text-center mb-12">
           <p className="text-xs text-purple-500 font-medium tracking-widest uppercase mb-2">✦ About Me</p>
           <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
