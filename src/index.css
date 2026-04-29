@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+@keyframes sectionFadeUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 16px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.section-animate {
+  animation: sectionFadeUp 0.8s ease both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .section-animate {
+    animation: none;
+  }
+}
