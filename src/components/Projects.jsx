@@ -17,6 +17,23 @@ const projects = [
     codeUrl: "https://github.com/Md-sarfraz",
     gradient: "from-purple-500 to-indigo-600",
   },
+  {
+    title: "Foxtle Landing Page",
+    type: "Frontend",
+    desc: "A modern company landing page designed to present a business brand with clarity and confidence. Built around a clean content hierarchy and polished interactions, the UI emphasizes conversion-focused sections and a smooth, responsive experience.",
+    image: "/foxtle-landing-page.png",
+    features: [
+      "Hero section with focused call-to-action",
+      "Structured About, Services, and Contact sections",
+      "Responsive layout with mobile-first spacing",
+      "Smooth scrolling and refined transitions",
+      "Reusable React components for easy scaling",
+    ],
+    tags: ["React.js", "Tailwind CSS", "UI/UX", "Responsive", "Landing Page"],
+    liveUrl: "https://foxtle-frontend.vercel.app/",
+    codeUrl: "https://github.com/Md-sarfraz",
+    gradient: "from-emerald-500 to-teal-600",
+  },
 ];
 
 export default function Projects() {

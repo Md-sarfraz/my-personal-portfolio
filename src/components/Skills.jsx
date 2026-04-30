@@ -47,7 +47,7 @@ export default function Skills() {
         {/* Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
           {skillCategories.map((cat) => (
-            <div key={cat.title} className="border border-gray-100 dark:border-gray-800 rounded-xl p-5 hover:shadow-md transition-shadow">
+            <div key={cat.title} className="bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-800 rounded-xl p-5 hover:shadow-md transition-shadow">
               <div className="flex items-center gap-2 mb-4">
                 {cat.icon}
                 <h3 className="font-semibold text-gray-800 dark:text-gray-100 text-sm">{cat.title}</h3>

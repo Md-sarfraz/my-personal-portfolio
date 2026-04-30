@@ -5,31 +5,31 @@ const cards = [
     icon: <FiServer size={20} className="text-purple-500" />,
     title: "Backend Specialist",
     desc: "Spring Boot, REST APIs, Spring Security for production-grade services.",
-    bg: "bg-purple-50 dark:bg-purple-900/30",
+    bg: "bg-purple-100 dark:bg-purple-900/30",
   },
   {
     icon: <FiMonitor size={20} className="text-indigo-500" />,
     title: "Frontend Craft",
     desc: "React + Tailwind with clean architecture are delightful UI experiences.",
-    bg: "bg-indigo-50 dark:bg-indigo-900/30",
+    bg: "bg-indigo-100 dark:bg-indigo-900/30",
   },
   {
     icon: <FiDatabase size={20} className="text-pink-500" />,
     title: "Database Design",
     desc: "MySQL schemas, JPA Hibernate, indexing & query optimisation.",
-    bg: "bg-pink-50 dark:bg-pink-900/30",
+    bg: "bg-pink-100 dark:bg-pink-900/30",
   },
   {
     icon: <FiUsers size={20} className="text-green-500" />,
     title: "Team Collaboration",
     desc: "Git-based workflows, code reviews, CI-friendly practices.",
-    bg: "bg-green-50 dark:bg-green-900/30",
+    bg: "bg-green-100 dark:bg-green-900/30",
   },
 ];
 
 export default function About() {
   return (
-    <section id="about" className="py-20 bg-gray-50 dark:bg-gray-900 section-animate">
+    <section id="about" className="py-20 bg-gray-100 dark:bg-gray-900 section-animate">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <div className="text-center mb-12">
           <p className="text-xs text-purple-500 font-medium tracking-widest uppercase mb-2">✦ About Me</p>
