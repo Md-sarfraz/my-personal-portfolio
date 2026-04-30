@@ -1,4 +1,5 @@
-import { FiMail, FiPhone, FiMapPin, FiGithub, FiLinkedin, FiTwitter } from "react-icons/fi";
+import { FiMail, FiPhone, FiMapPin, FiGithub, FiLinkedin } from "react-icons/fi";
+import { SiLeetcode } from "react-icons/si";
 import { useState } from "react";
 
 export default function Contact() {
@@ -34,13 +35,13 @@ export default function Contact() {
                 <div className="w-9 h-9 rounded-full bg-purple-50 flex items-center justify-center">
                   <FiMail size={14} className="text-purple-500" />
                 </div>
-                <span className="text-sm text-gray-600">mdsarfraz2170@gmail.com</span>
+                <span className="text-sm text-gray-600">mdsarfraz62070@gmail.com</span>
               </div>
               <div className="flex items-center gap-3">
                 <div className="w-9 h-9 rounded-full bg-purple-50 flex items-center justify-center">
                   <FiPhone size={14} className="text-purple-500" />
                 </div>
-                <span className="text-sm text-gray-600">+91-6200900630</span>
+                <span className="text-sm text-gray-600">+91-6203800630</span>
               </div>
               <div className="flex items-center gap-3">
                 <div className="w-9 h-9 rounded-full bg-purple-50 flex items-center justify-center">
@@ -51,14 +52,29 @@ export default function Contact() {
             </div>
 
             <div className="flex gap-4 mt-6">
-              <a href="#" className="w-9 h-9 rounded-full border border-gray-200 flex items-center justify-center text-gray-400 hover:text-purple-600 hover:border-purple-400 transition-colors">
+              <a
+                href="https://github.com/Md-sarfraz"
+                target="_blank"
+                rel="noreferrer"
+                className="w-9 h-9 rounded-full border border-gray-200 flex items-center justify-center text-gray-400 hover:text-purple-600 hover:border-purple-400 transition-colors"
+              >
                 <FiGithub size={14} />
               </a>
-              <a href="#" className="w-9 h-9 rounded-full border border-gray-200 flex items-center justify-center text-gray-400 hover:text-purple-600 hover:border-purple-400 transition-colors">
+              <a
+                href="https://www.linkedin.com/in/md-sarfraz786/"
+                target="_blank"
+                rel="noreferrer"
+                className="w-9 h-9 rounded-full border border-gray-200 flex items-center justify-center text-gray-400 hover:text-purple-600 hover:border-purple-400 transition-colors"
+              >
                 <FiLinkedin size={14} />
               </a>
-              <a href="#" className="w-9 h-9 rounded-full border border-gray-200 flex items-center justify-center text-gray-400 hover:text-purple-600 hover:border-purple-400 transition-colors">
-                <FiTwitter size={14} />
+              <a
+                href="https://leetcode.com/u/Md_Sarfraz123/"
+                target="_blank"
+                rel="noreferrer"
+                className="w-9 h-9 rounded-full border border-gray-200 flex items-center justify-center text-gray-400 hover:text-purple-600 hover:border-purple-400 transition-colors"
+              >
+                <SiLeetcode size={14} />
               </a>
             </div>
           </div>

@@ -13,8 +13,8 @@ const projects = [
       "Responsive React + Tailwind UI",
     ],
     tags: ["React.js", "TailwindCSS", "Java", "Spring Boot", "MySQL", "JWT"],
-    liveUrl: "#",
-    codeUrl: "#",
+    liveUrl: "https://movie-ticket-booking-tau-five.vercel.app/",
+    codeUrl: "https://github.com/Md-sarfraz",
     gradient: "from-purple-500 to-indigo-600",
   },
 ];
@@ -37,7 +37,7 @@ export default function Projects() {
           </span>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
           {/* Project Card */}
           {projects.map((p) => (
             <div key={p.title} className="bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100">
@@ -46,31 +46,31 @@ export default function Projects() {
                 <img
                   src={p.image}
                   alt={`${p.title} preview`}
-                  className="h-44 w-full object-cover"
+                  className="h-36 w-full object-cover"
                   loading="lazy"
                 />
               ) : (
-                <div className={`bg-gradient-to-br ${p.gradient} h-44 flex items-center justify-center`}>
+                <div className={`bg-gradient-to-br ${p.gradient} h-36 flex items-center justify-center`}>
                   <span className="text-white font-bold text-lg opacity-60 uppercase tracking-widest">
                     Full Stack
                   </span>
                 </div>
               )}
 
-              <div className="p-6">
+              <div className="p-5">
                 <div className="flex items-center justify-between mb-2">
                   <h3 className="font-bold text-gray-900 text-base">{p.title}</h3>
                   <span className="text-xs bg-gray-100 text-gray-500 px-3 py-1 rounded-full">{p.type}</span>
                 </div>
-                <p className="text-gray-500 text-xs leading-relaxed mb-4">{p.desc}</p>
-                <ul className="text-xs text-gray-500 space-y-1 mb-4">
+                <p className="text-gray-500 text-xs leading-relaxed mb-3">{p.desc}</p>
+                <ul className="text-xs text-gray-500 space-y-1 mb-3">
                   {p.features.map((f) => (
                     <li key={f} className="flex items-start gap-1">
                       <span className="text-purple-400 mt-0.5">★</span> {f}
                     </li>
                   ))}
                 </ul>
-                <div className="flex flex-wrap gap-2 mb-5">
+                <div className="flex flex-wrap gap-2 mb-4">
                   {p.tags.map((t) => (
                     <span key={t} className="text-xs bg-purple-50 text-purple-600 px-2 py-0.5 rounded font-medium">
                       {t}
@@ -80,12 +80,16 @@ export default function Projects() {
                 <div className="flex gap-3">
                   <a
                     href={p.liveUrl}
+                    target="_blank"
+                    rel="noreferrer"
                     className="flex items-center gap-1.5 bg-purple-600 text-white text-xs font-semibold px-4 py-2 rounded-full hover:bg-purple-700 transition-colors"
                   >
                     <FiExternalLink size={12} /> Live Demo
                   </a>
                   <a
                     href={p.codeUrl}
+                    target="_blank"
+                    rel="noreferrer"
                     className="flex items-center gap-1.5 border border-gray-200 text-gray-600 text-xs font-semibold px-4 py-2 rounded-full hover:border-purple-400 transition-colors"
                   >
                     <FiGithub size={12} /> Code
@@ -96,14 +100,16 @@ export default function Projects() {
           ))}
 
           {/* Coming Soon Card */}
-          <div className="bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100 flex flex-col items-center justify-center p-12 text-center">
+          <div className="bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100 flex flex-col items-center justify-center p-8 text-center">
             <div className="w-14 h-14 rounded-full bg-purple-50 flex items-center justify-center mb-4">
               <FiStar size={24} className="text-purple-400" />
             </div>
             <h3 className="font-semibold text-gray-800 mb-2">More projects coming soon</h3>
             <p className="text-gray-400 text-xs mb-5">Currently shipping. Check my GitHub for latest experiments.</p>
             <a
-              href="#"
+              href="https://github.com/Md-sarfraz"
+              target="_blank"
+              rel="noreferrer"
               className="flex items-center gap-2 border border-gray-200 text-gray-600 text-xs font-semibold px-4 py-2 rounded-full hover:border-purple-400 transition-colors"
             >
               <FiGithub size={12} /> View GitHub

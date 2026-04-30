@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { FiDownload, FiGithub, FiLinkedin, FiTwitter, FiCodepen } from "react-icons/fi";
+import { FiDownload, FiGithub, FiLinkedin } from "react-icons/fi";
 import { SiLeetcode } from "react-icons/si";
 
 const codeSnippet = `const developer = {
@@ -96,10 +96,30 @@ export default function Hero() {
 
             {/* Social Icons */}
             <div className="flex items-center gap-4 justify-center lg:justify-start text-gray-400">
-              <a href="#" className="hover:text-purple-600 transition-colors"><FiGithub size={18} /></a>
-              <a href="#" className="hover:text-purple-600 transition-colors"><FiLinkedin size={18} /></a>
-              <a href="#" className="hover:text-purple-600 transition-colors"><FiCodepen size={18} /></a>
-              <a href="#" className="hover:text-purple-600 transition-colors"><SiLeetcode size={18} /></a>
+              <a
+                href="https://github.com/Md-sarfraz"
+                target="_blank"
+                rel="noreferrer"
+                className="hover:text-purple-600 transition-colors"
+              >
+                <FiGithub size={18} />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/md-sarfraz786/"
+                target="_blank"
+                rel="noreferrer"
+                className="hover:text-purple-600 transition-colors"
+              >
+                <FiLinkedin size={18} />
+              </a>
+              <a
+                href="https://leetcode.com/u/Md_Sarfraz123/"
+                target="_blank"
+                rel="noreferrer"
+                className="hover:text-purple-600 transition-colors"
+              >
+                <SiLeetcode size={18} />
+              </a>
             </div>
           </div>
 
