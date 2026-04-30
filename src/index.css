@@ -18,11 +18,19 @@ html {
 }
 
 .section-animate {
+  opacity: 0;
+  transform: translate3d(0, 16px, 0);
+  will-change: opacity, transform;
+}
+
+.section-animate.is-visible {
   animation: sectionFadeUp 0.8s ease both;
 }
 
 @media (prefers-reduced-motion: reduce) {
   .section-animate {
     animation: none;
+    opacity: 1;
+    transform: none;
   }
 }

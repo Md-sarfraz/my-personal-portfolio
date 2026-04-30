@@ -13,7 +13,7 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className="py-20 bg-white section-animate">
+    <section id="contact" className="py-20 bg-white dark:bg-gray-950 section-animate">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         {/* Header */}
         {/* <div className="text-center mb-14">
@@ -29,25 +29,25 @@ export default function Contact() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-4xl mx-auto">
           {/* Left - Get in touch */}
           <div>
-            <h3 className="font-bold text-gray-800 mb-5">Get in touch</h3>
+            <h3 className="font-bold text-gray-800 dark:text-gray-100 mb-5">Get in touch</h3>
             <div className="space-y-4">
               <div className="flex items-center gap-3">
-                <div className="w-9 h-9 rounded-full bg-purple-50 flex items-center justify-center">
+                <div className="w-9 h-9 rounded-full bg-purple-50 dark:bg-purple-900/40 flex items-center justify-center">
                   <FiMail size={14} className="text-purple-500" />
                 </div>
-                <span className="text-sm text-gray-600">mdsarfraz62070@gmail.com</span>
+                <span className="text-sm text-gray-600 dark:text-gray-300">mdsarfraz62070@gmail.com</span>
               </div>
               <div className="flex items-center gap-3">
-                <div className="w-9 h-9 rounded-full bg-purple-50 flex items-center justify-center">
+                <div className="w-9 h-9 rounded-full bg-purple-50 dark:bg-purple-900/40 flex items-center justify-center">
                   <FiPhone size={14} className="text-purple-500" />
                 </div>
-                <span className="text-sm text-gray-600">+91-6203800630</span>
+                <span className="text-sm text-gray-600 dark:text-gray-300">+91-6203800630</span>
               </div>
               <div className="flex items-center gap-3">
-                <div className="w-9 h-9 rounded-full bg-purple-50 flex items-center justify-center">
+                <div className="w-9 h-9 rounded-full bg-purple-50 dark:bg-purple-900/40 flex items-center justify-center">
                   <FiMapPin size={14} className="text-purple-500" />
                 </div>
-                <span className="text-sm text-gray-600">Hyderabad, India</span>
+                <span className="text-sm text-gray-600 dark:text-gray-300">Hyderabad, India</span>
               </div>
             </div>
 
@@ -56,7 +56,7 @@ export default function Contact() {
                 href="https://github.com/Md-sarfraz"
                 target="_blank"
                 rel="noreferrer"
-                className="w-9 h-9 rounded-full border border-gray-200 flex items-center justify-center text-gray-400 hover:text-purple-600 hover:border-purple-400 transition-colors"
+                className="w-9 h-9 rounded-full border border-gray-200 dark:border-gray-700 flex items-center justify-center text-gray-400 hover:text-purple-600 hover:border-purple-400 transition-colors"
               >
                 <FiGithub size={14} />
               </a>
@@ -64,7 +64,7 @@ export default function Contact() {
                 href="https://www.linkedin.com/in/md-sarfraz786/"
                 target="_blank"
                 rel="noreferrer"
-                className="w-9 h-9 rounded-full border border-gray-200 flex items-center justify-center text-gray-400 hover:text-purple-600 hover:border-purple-400 transition-colors"
+                className="w-9 h-9 rounded-full border border-gray-200 dark:border-gray-700 flex items-center justify-center text-gray-400 hover:text-purple-600 hover:border-purple-400 transition-colors"
               >
                 <FiLinkedin size={14} />
               </a>
@@ -72,7 +72,7 @@ export default function Contact() {
                 href="https://leetcode.com/u/Md_Sarfraz123/"
                 target="_blank"
                 rel="noreferrer"
-                className="w-9 h-9 rounded-full border border-gray-200 flex items-center justify-center text-gray-400 hover:text-purple-600 hover:border-purple-400 transition-colors"
+                className="w-9 h-9 rounded-full border border-gray-200 dark:border-gray-700 flex items-center justify-center text-gray-400 hover:text-purple-600 hover:border-purple-400 transition-colors"
               >
                 <SiLeetcode size={14} />
               </a>
@@ -81,39 +81,39 @@ export default function Contact() {
 
           {/* Right - Send a message */}
           <div>
-            <h3 className="font-bold text-gray-800 mb-5">Send a message</h3>
+            <h3 className="font-bold text-gray-800 dark:text-gray-100 mb-5">Send a message</h3>
             <form onSubmit={handleSubmit} className="space-y-4">
               <div>
-                <label className="block text-xs text-gray-500 mb-1">Your Name</label>
+                <label className="block text-xs text-gray-500 dark:text-gray-300 mb-1">Your Name</label>
                 <input
                   type="text"
                   name="name"
                   value={form.name}
                   onChange={handleChange}
                   placeholder="Your Name"
-                  className="w-full border border-gray-200 rounded-lg px-3 py-2.5 text-sm text-gray-700 focus:outline-none focus:border-purple-400 transition-colors"
+                  className="w-full border border-gray-200 dark:border-gray-700 rounded-lg px-3 py-2.5 text-sm text-gray-700 dark:text-gray-100 dark:bg-gray-900 focus:outline-none focus:border-purple-400 transition-colors"
                 />
               </div>
               <div>
-                <label className="block text-xs text-gray-500 mb-1">Email</label>
+                <label className="block text-xs text-gray-500 dark:text-gray-300 mb-1">Email</label>
                 <input
                   type="email"
                   name="email"
                   value={form.email}
                   onChange={handleChange}
                   placeholder="your@email.com"
-                  className="w-full border border-gray-200 rounded-lg px-3 py-2.5 text-sm text-gray-700 focus:outline-none focus:border-purple-400 transition-colors"
+                  className="w-full border border-gray-200 dark:border-gray-700 rounded-lg px-3 py-2.5 text-sm text-gray-700 dark:text-gray-100 dark:bg-gray-900 focus:outline-none focus:border-purple-400 transition-colors"
                 />
               </div>
               <div>
-                <label className="block text-xs text-gray-500 mb-1">Tell me about your project</label>
+                <label className="block text-xs text-gray-500 dark:text-gray-300 mb-1">Tell me about your project</label>
                 <textarea
                   name="message"
                   value={form.message}
                   onChange={handleChange}
                   rows={4}
                   placeholder="Tell me about your project..."
-                  className="w-full border border-gray-200 rounded-lg px-3 py-2.5 text-sm text-gray-700 focus:outline-none focus:border-purple-400 transition-colors resize-none"
+                  className="w-full border border-gray-200 dark:border-gray-700 rounded-lg px-3 py-2.5 text-sm text-gray-700 dark:text-gray-100 dark:bg-gray-900 focus:outline-none focus:border-purple-400 transition-colors resize-none"
                 />
               </div>
               <button
