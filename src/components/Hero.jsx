@@ -87,7 +87,9 @@ export default function Hero() {
                 View Projects →
               </a>
               <a
-                href="#"
+                href="https://drive.google.com/uc?export=download&id=1q351VE9DeqBnrfNk15D5Uf-bEapBuxj8"
+                target="_blank"
+                rel="noreferrer"
                 className="flex items-center gap-2 border border-gray-300 dark:border-gray-700 text-gray-700 dark:text-gray-200 text-sm font-semibold px-6 py-3 rounded-full hover:border-purple-400 transition-colors"
               >
                 <FiDownload size={14} /> Download Resume
