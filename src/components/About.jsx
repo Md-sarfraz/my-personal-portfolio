@@ -45,7 +45,7 @@ export default function About() {
         {/* Cards */}
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 mb-14">
           {cards.map((card) => (
-            <div key={card.title} className={`${card.bg} rounded-xl p-5 flex items-start gap-4`}>
+            <div key={card.title} className={`${card.bg} rounded-xl p-5 flex items-start gap-4 float-soft`}>
               <div className="mt-1">{card.icon}</div>
               <div>
                 <h3 className="font-semibold text-gray-800 dark:text-gray-100 text-sm mb-1">{card.title}</h3>

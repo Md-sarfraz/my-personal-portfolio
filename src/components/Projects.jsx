@@ -57,7 +57,7 @@ export default function Projects() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
           {/* Project Card */}
           {projects.map((p) => (
-            <div key={p.title} className="bg-white dark:bg-gray-950 rounded-2xl overflow-hidden shadow-sm border border-gray-100 dark:border-gray-800">
+            <div key={p.title} className="bg-white dark:bg-gray-950 rounded-2xl overflow-hidden shadow-sm border border-gray-100 dark:border-gray-800 float-soft">
               {/* Thumbnail */}
               {p.image ? (
                 <img
@@ -117,7 +117,7 @@ export default function Projects() {
           ))}
 
           {/* Coming Soon Card */}
-          <div className="bg-white dark:bg-gray-950 rounded-2xl overflow-hidden shadow-sm border border-gray-100 dark:border-gray-800 flex flex-col items-center justify-center p-8 text-center">
+          <div className="bg-white dark:bg-gray-950 rounded-2xl overflow-hidden shadow-sm border border-gray-100 dark:border-gray-800 flex flex-col items-center justify-center p-8 text-center float-soft">
             <div className="w-14 h-14 rounded-full bg-purple-50 dark:bg-purple-900/40 flex items-center justify-center mb-4">
               <FiStar size={24} className="text-purple-400" />
             </div>

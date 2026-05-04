@@ -17,7 +17,7 @@ export default function Experience() {
             {/* Dot */}
             <div className="absolute left-[13px] top-1 w-3 h-3 rounded-full bg-purple-500 border-2 border-white dark:border-gray-900 shadow"></div>
 
-            <div className="bg-gray-50 dark:bg-gray-900 rounded-xl p-6">
+            <div className="bg-gray-50 dark:bg-gray-900 rounded-xl p-6 float-soft">
               <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-1">
                 <h3 className="font-bold text-gray-900 dark:text-gray-100 text-sm">Software Developer Intern</h3>
                 <span className="text-xs text-gray-400 dark:text-gray-300 mt-1 sm:mt-0">June 2025 → Nov 2025</span>

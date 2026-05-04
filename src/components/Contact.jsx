@@ -28,7 +28,7 @@ export default function Contact() {
         {/* Two columns */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-4xl mx-auto">
           {/* Left - Get in touch */}
-          <div>
+          <div className="float-soft">
             <h3 className="font-bold text-gray-800 dark:text-gray-100 mb-5">Get in touch</h3>
             <div className="space-y-4">
               <div className="flex items-center gap-3">
@@ -80,7 +80,7 @@ export default function Contact() {
           </div>
 
           {/* Right - Send a message */}
-          <div>
+          <div className="float-soft">
             <h3 className="font-bold text-gray-800 dark:text-gray-100 mb-5">Send a message</h3>
             <form onSubmit={handleSubmit} className="space-y-4">
               <div>

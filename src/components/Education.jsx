@@ -32,7 +32,7 @@ export default function Education() {
         {/* Cards */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 max-w-4xl mx-auto">
           {education.map((e) => (
-            <div key={e.degree} className="bg-white dark:bg-gray-950 border border-gray-100 dark:border-gray-800 rounded-xl p-5 flex items-start gap-4 shadow-sm">
+            <div key={e.degree} className="bg-white dark:bg-gray-950 border border-gray-100 dark:border-gray-800 rounded-xl p-5 flex items-start gap-4 shadow-sm float-soft">
               <div className="w-10 h-10 rounded-full bg-purple-50 dark:bg-purple-900/40 flex items-center justify-center text-lg flex-shrink-0">
                 {e.icon}
               </div>
