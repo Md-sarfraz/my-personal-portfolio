@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { FiDownload, FiGithub, FiLinkedin } from "react-icons/fi";
+import { FiDownload, FiGithub, FiLinkedin, FiTwitter, FiCodepen } from "react-icons/fi";
 import { SiLeetcode } from "react-icons/si";
 
 const codeSnippet = `const developer = {
@@ -54,7 +54,7 @@ export default function Hero() {
   }, [typedText, isDeleting, roleIndex]);
 
   return (
-    <section id="home" className="min-h-screen pt-14 flex items-center bg-white dark:bg-gray-950 section-animate">
+    <section id="home" className="min-h-screen pt-14 flex items-center bg-white">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 w-full py-16">
         <div className="flex flex-col lg:flex-row items-center gap-12">
           {/* Left */}
@@ -62,20 +62,20 @@ export default function Hero() {
             <p className="text-xs text-purple-500 font-medium mb-3 tracking-widest uppercase">
               ✦ Available for opportunities
             </p>
-            <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 dark:text-gray-100 leading-tight mb-2">
+            <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 leading-tight mb-2">
               Hi, I'm <span className="text-purple-600">MD Sarfraz</span>
             </h1>
-            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-gray-100 mb-4">
+            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
               I build as a{" "}
               <span className="text-purple-600 border-r-2 border-purple-600 pr-1 animate-pulse">
                 {typedText}
               </span>
             </h2>
-            <p className="text-gray-500 dark:text-gray-300 text-sm sm:text-base leading-relaxed max-w-lg mx-auto lg:mx-0 mb-8">
+            <p className="text-gray-500 text-sm sm:text-base leading-relaxed max-w-lg mx-auto lg:mx-0 mb-8">
               Full Stack Developer skilled in{" "}
-              <span className="text-gray-700 dark:text-gray-200 font-medium">Spring Boot</span>,{" "}
-              <span className="text-gray-700 dark:text-gray-200 font-medium">React</span> and{" "}
-              <span className="text-gray-700 dark:text-gray-200 font-medium">MySQL</span>. I build
+              <span className="text-gray-700 font-medium">Spring Boot</span>,{" "}
+              <span className="text-gray-700 font-medium">React</span> and{" "}
+              <span className="text-gray-700 font-medium">MySQL</span>. I build
               secure, scalable, and high performance web applications.
             </p>
 
@@ -87,41 +87,19 @@ export default function Hero() {
                 View Projects →
               </a>
               <a
-                href="https://drive.google.com/uc?export=download&id=1q351VE9DeqBnrfNk15D5Uf-bEapBuxj8"
-                target="_blank"
-                rel="noreferrer"
-                className="flex items-center gap-2 border border-gray-300 dark:border-gray-700 text-gray-700 dark:text-gray-200 text-sm font-semibold px-6 py-3 rounded-full hover:border-purple-400 transition-colors"
+                href="#"
+                className="flex items-center gap-2 border border-gray-300 text-gray-700 text-sm font-semibold px-6 py-3 rounded-full hover:border-purple-400 transition-colors"
               >
                 <FiDownload size={14} /> Download Resume
               </a>
             </div>
 
             {/* Social Icons */}
-            <div className="flex items-center gap-4 justify-center lg:justify-start text-gray-400 dark:text-gray-400">
-              <a
-                href="https://github.com/Md-sarfraz"
-                target="_blank"
-                rel="noreferrer"
-                className="hover:text-purple-600 transition-colors"
-              >
-                <FiGithub size={18} />
-              </a>
-              <a
-                href="https://www.linkedin.com/in/md-sarfraz786/"
-                target="_blank"
-                rel="noreferrer"
-                className="hover:text-purple-600 transition-colors"
-              >
-                <FiLinkedin size={18} />
-              </a>
-              <a
-                href="https://leetcode.com/u/Md_Sarfraz123/"
-                target="_blank"
-                rel="noreferrer"
-                className="hover:text-purple-600 transition-colors"
-              >
-                <SiLeetcode size={18} />
-              </a>
+            <div className="flex items-center gap-4 justify-center lg:justify-start text-gray-400">
+              <a href="#" className="hover:text-purple-600 transition-colors"><FiGithub size={18} /></a>
+              <a href="#" className="hover:text-purple-600 transition-colors"><FiLinkedin size={18} /></a>
+              <a href="#" className="hover:text-purple-600 transition-colors"><FiCodepen size={18} /></a>
+              <a href="#" className="hover:text-purple-600 transition-colors"><SiLeetcode size={18} /></a>
             </div>
           </div>
 
