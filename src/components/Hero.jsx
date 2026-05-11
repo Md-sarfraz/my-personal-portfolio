@@ -54,8 +54,34 @@ export default function Hero() {
   }, [typedText, isDeleting, roleIndex]);
 
   return (
-    <section id="home" className="min-h-screen pt-14 flex items-center bg-white">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 w-full py-16">
+    <section id="home" className="min-h-screen pt-14 flex items-center bg-white relative overflow-hidden">
+      <div className="pointer-events-none absolute inset-0 -z-0">
+        <img
+          src="/dot-image1.png"
+          alt=""
+          aria-hidden="true"
+          className="absolute left-4 top-6 w-24 opacity-35 sm:left-10 sm:top-8 sm:w-28"
+        />
+        <img
+          src="/dot-image5.png"
+          alt=""
+          aria-hidden="true"
+          className="absolute right-6 top-10 w-20 opacity-30 sm:right-12 sm:top-14 sm:w-24"
+        />
+        <img
+          src="/dot-image6.png"
+          alt=""
+          aria-hidden="true"
+          className="absolute left-10 bottom-10 w-28 opacity-30 sm:left-16 sm:bottom-16 sm:w-32"
+        />
+        <img
+          src="/circle-image1.png"
+          alt=""
+          aria-hidden="true"
+          className="absolute right-10 bottom-8 w-24 opacity-35 sm:right-16 sm:bottom-12 sm:w-28"
+        />
+      </div>
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 w-full py-16 relative z-10">
         <div className="flex flex-col lg:flex-row items-center gap-12">
           {/* Left */}
           <div className="flex-1 text-center lg:text-left">
@@ -135,6 +161,7 @@ export default function Hero() {
                 </code>
               </pre>
             </div>
+
           </div>
         </div>
       </div>

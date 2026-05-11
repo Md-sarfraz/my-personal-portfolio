@@ -1,15 +1,55 @@
 import { FiMail, FiPhone, FiMapPin, FiGithub, FiLinkedin } from "react-icons/fi";
 import { SiLeetcode } from "react-icons/si";
 import { useState } from "react";
+import { toast } from "react-hot-toast";
+import emailjs from "@emailjs/browser";
 
 export default function Contact() {
   const [form, setForm] = useState({ name: "", email: "", message: "" });
+  const [isSending, setIsSending] = useState(false);
 
   const handleChange = (e) => setForm({ ...form, [e.target.name]: e.target.value });
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    alert("Message sent!");
+    if (isSending) return;
+
+    setIsSending(true);
+    const toastId = toast.loading("Sending message...");
+
+    try {
+      const serviceId =
+        import.meta.env.VITE_EMAILJS_SERVICE_ID ??
+        import.meta.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID;
+      const templateId =
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID ??
+        import.meta.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID;
+      const publicKey =
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY ??
+        import.meta.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY;
+
+      if (!serviceId || !templateId || !publicKey) {
+        throw new Error("Missing EmailJS environment variables.");
+      }
+
+      await emailjs.send(
+        serviceId,
+        templateId,
+        {
+          from_name: form.name,
+          from_email: form.email,
+          message: form.message,
+        },
+        publicKey
+      );
+
+      toast.success("Message sent successfully.", { id: toastId });
+      setForm({ name: "", email: "", message: "" });
+    } catch (error) {
+      toast.error("Failed to send message. Please try again.", { id: toastId });
+    } finally {
+      setIsSending(false);
+    }
   };
 
   return (
@@ -118,9 +158,10 @@ export default function Contact() {
               </div>
               <button
                 type="submit"
-                className="w-full bg-purple-600 text-white font-semibold text-sm py-3 rounded-lg hover:bg-purple-700 transition-colors"
+                disabled={isSending}
+                className="w-full bg-purple-600 text-white font-semibold text-sm py-3 rounded-lg hover:bg-purple-700 transition-colors disabled:opacity-70 disabled:cursor-not-allowed"
               >
-                Send Message →
+                {isSending ? "Sending..." : "Send Message →"}
               </button>
             </form>
           </div>
